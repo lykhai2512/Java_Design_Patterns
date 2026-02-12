@@ -1,14 +1,14 @@
 package Singleton;
-public final class LoggerSingleton {
-    private static LoggerSingleton instance;
+public final class Singleton {
+    private static Singleton instance;
     private static String[] logs;
 
-    private LoggerSingleton() {
+    private Singleton() {
     }
 
-    public synchronized static LoggerSingleton getInstance() {
+    public synchronized static Singleton getInstance() {
         if (instance == null) {
-            instance = new LoggerSingleton();
+            instance = new Singleton();
         }
         return instance;
     }
