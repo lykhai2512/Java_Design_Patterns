@@ -1,3 +1,4 @@
+package Singleton;
 public final class Logger {
     private static Logger instance;
     private static String[] logs;
