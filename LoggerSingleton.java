@@ -5,7 +5,7 @@ public final class LoggerSingleton {
     private LoggerSingleton() {
     }
 
-    public static LoggerSingleton getInstance() {
+    public synchronized static LoggerSingleton getInstance() {
         if (instance == null) {
             instance = new LoggerSingleton();
         }
